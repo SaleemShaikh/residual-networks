@@ -18,7 +18,10 @@ from resnets_utils import *
 from keras.initializers import glorot_uniform
 import scipy.misc
 from matplotlib.pyplot import imshow
-%matplotlib inline
+#%matplotlib inline
+from IPython import get_ipython
+get_ipython().run_line_magic('matplotlib', 'inline')
+
 
 import keras.backend as K
 K.set_image_data_format('channels_last')
